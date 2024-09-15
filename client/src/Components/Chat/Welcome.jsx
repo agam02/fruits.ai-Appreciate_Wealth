@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Welcome.css';
 
 const WelcomeScreen = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      // Redirect to the specified URL after 2 seconds
-      window.location.href = 'http://localhost:5173/Chat';
+      // Use navigate to redirect after 2 seconds
+      navigate('/Chat');
     }, 2000);
 
     return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
-  }, []);
+  }, [navigate]);
 
   return (
     <div className="welcome-screen">
