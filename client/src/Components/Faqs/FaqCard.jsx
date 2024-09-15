@@ -1,5 +1,5 @@
 import React from 'react';
-import './FAQCard.css';
+import './FaqCard.css';
 
 const FAQCard = ({ heading, question, answer, url, onEdit, onDelete }) => {
     return (
