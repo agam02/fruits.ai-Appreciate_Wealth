@@ -1,0 +1,204 @@
+/* General Styles */
+
+/* Container */
+.container {
+  width: 90%; /* Reduce width for better mobile fit */
+  max-width: 700px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+/* Wrapper */
+.wrapper {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+/* Text Inputs */
+.text-input {
+  display: flex;
+  flex-direction: column; /* Vertical stacking on all screen sizes */
+}
+
+.text-input textarea {
+  height: 150px; /* Adjusted for better mobile fit */
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+  font-size: 14px; /* Reduced font size for mobile */
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.text-input .from-text {
+  border-right: none; /* Remove border for better flow */
+}
+
+.text-input .to-text {
+  border-left: none;
+}
+
+.text-input textarea::placeholder {
+  color: #b0b0b0;
+}
+
+/* Controls */
+.controls {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Stack vertically on mobile */
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+}
+
+.controls .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.controls .icons {
+  display: flex;
+  align-items: center;
+}
+
+.controls .icons i {
+  width: 30px; /* Reduced icon size */
+  color: #888;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  margin: 0 5px;
+}
+
+.controls .icons i:hover {
+  color: #555;
+}
+
+.controls .row select {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  width: 100%;
+  max-width: 150px; /* Ensure select dropdowns fit */
+}
+
+/* Scrollbar */
+.text-input textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.text-input textarea::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 8px;
+}
+
+.controls .row select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.controls .row select::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+}
+
+/* Exchange Icon */
+.controls .exchange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.controls .exchange:hover {
+  color: #555;
+}
+
+/* Button */
+.container button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px; /* Reduced button font size */
+  border-radius: 8px;
+  background: #0c0c0c;
+  transition: background 0.3s;
+}
+
+.container button:hover {
+  background: #221a0d;
+}
+
+/* Media Queries */
+
+/* For large screens (desktops, tablets) */
+@media (min-width: 768px) {
+  .text-input {
+    flex-direction: row; /* Horizontal layout on larger screens */
+  }
+
+  .text-input .from-text {
+    border-right: 1px solid #ddd; /* Reintroduce borders for large screens */
+  }
+
+  .text-input .to-text {
+    border-left: 1px solid #ddd;
+  }
+
+  .controls {
+    flex-direction: row;
+  }
+
+  .controls .row {
+    margin-bottom: 0;
+  }
+
+  .controls .row select {
+    max-width: none; /* Allow select boxes to expand fully */
+  }
+}
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 480px) {
+  .text-input textarea {
+    height: 120px; /* Further reduce textarea height */
+    font-size: 12px; /* Smaller font for readability */
+  }
+
+  .controls .row select {
+    font-size: 12px;
+    padding: 6px;
+    width: 100%; /* Full width for better fit */
+    max-width: none;
+  }
+
+  .controls .icons i {
+    width: 25px; /* Smaller icons for mobile */
+    font-size: 14px;
+  }
+
+  .container button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .controls .exchange {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,232 @@
+/* Styling for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  width: 100vw;
+  padding: 20px; /* For smaller screens */
+}
+
+.login-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #6c63ff;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.tabs button:last-child {
+  margin-right: 0;
+}
+
+.tabs button {
+  color: inherit;
+  text-decoration: none;
+}
+
+.input-container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Remember password and forgot password section */
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center; /* Align checkbox and label text vertically */
+  font-size: 12px;
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-right: 3px; /* Reduced margin between checkbox and label */
+}
+
+.remember-forgot a {
+  color: #6c63ff;
+  font-size: 0.9rem;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Social icons styling */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  opacity: 0.7;
+}
+
+/* Facebook brand color */
+.social-icons .fa-facebook {
+  color: #3b5998; /* Facebook Blue */
+}
+
+/* Instagram brand color */
+.social-icons .fa-instagram {
+  color: #e1306c; /* Instagram Pink */
+}
+
+/* Pinterest brand color */
+.social-icons .fa-pinterest {
+  color: #bd081c; /* Pinterest Red */
+}
+
+/* LinkedIn brand color */
+.social-icons .fa-linkedin {
+  color: #0077b5; /* LinkedIn Blue */
+}
+
+/* Fingerprint icon */
+.fingerprint {
+  margin-top: 20px;
+  color: #6c63ff;
+}
+
+.fingerprint i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive design */
+
+/* Tablets and smaller desktops */
+@media (max-width: 768px) {
+  .login-box {
+    width: 350px;
+    padding: 30px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  .social-icons i {
+    font-size: 1.3rem;
+  }
+
+  .fingerprint i {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .login-box {
+    width: 70%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .tabs button {
+    font-size: 0.9rem;
+  }
+
+  .input-container {
+    margin-bottom: 12px;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .remember-forgot label {
+    font-size: 11px;
+  }
+
+  .remember-forgot a {
+    font-size: 0.8rem;
+  }
+
+  .social-icons i {
+    font-size: 1.2rem;
+  }
+
+  .fingerprint i {
+    font-size: 1.6rem;
+  }
+}

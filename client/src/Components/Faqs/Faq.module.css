@@ -1,0 +1,75 @@
+
+.faqSection {
+    padding: 20px;
+    background: linear-gradient(90deg, #E0BCF3 0%, #7EE7EE 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    min-height: 100vh;
+}
+
+.faqAccordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    /* Space between FAQ cards */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Add FAQ Button Styling */
+.addButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 auto; /* Center the button horizontally */
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+    .faqSection {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .addButton {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Further responsiveness for very small screens (mobile) */
+@media (max-width: 480px) {
+    .faqSection {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .addButton {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}

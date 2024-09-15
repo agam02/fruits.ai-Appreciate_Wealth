@@ -1,0 +1,150 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(45deg, #E0BCF3,#7EE7EE); /* Gradient background */
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: 800;
+  }
+  
+  .home-title {
+    font-size: 2.5rem; /* Larger size for the full-page view */
+    color: #4d4d4d;
+    margin-bottom: 5px;
+  }
+  
+  .home-subtitle {
+    font-size: 1.4rem;
+    color: #7d7d7d;
+    margin-bottom: 20px;
+  }
+  
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    width: 20%; /* Ensure buttons span the full width */
+    max-width: 500px; /* Keep it contained on larger screens */
+  }
+  
+  .button {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 2.0rem;
+    font-weight: 1200;
+    color: white;
+    transition: transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .chat {
+    background-color: #ffb6c1;
+    color: #c84ad3;
+    font-family: dosis;
+  }
+  
+  .translate {
+    background-color: #c2f0ff;
+  }
+  
+  .translate img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .faqs {
+    background-color: #e4caff;
+  }
+  
+  .about {
+    background-color: #FFC2F2;
+    color:#C84AD3;
+    ;
+  }
+  .link{
+    text-decoration: inherit;
+    color: inherit;
+  }
+  
+  .tips {
+    background-color:#C2FFD0;
+    ;
+  }
+  
+  .settings {
+    background-color:#EFFFC2;
+    ;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Dots section */
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dots span {
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+  }
+  
+  .dots span.active {
+    background-color: #717171;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .home-title {
+      font-size: 2rem;
+      margin-left: 60px;
+    }
+    .home-subtitle {
+      font-size: 1.2rem;
+      margin-left: 60px;
+    }
+  
+    .button {
+      height: 80px;
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+  
+    .button-grid {
+      grid-gap: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .home-title {
+      font-size: 1.8rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .button {
+      height: 70px;
+      font-size: 1rem;
+    }
+  
+    .button-grid {
+      grid-gap: 8px;
+    }
+  }
+  

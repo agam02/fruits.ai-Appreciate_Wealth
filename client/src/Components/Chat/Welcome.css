@@ -1,0 +1,50 @@
+/* Main container for the welcome screen */
+.welcome-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Icon styling */
+  .icon-container {
+    margin-bottom: 20px;
+  }
+  
+  .chat-icon {
+    font-size: 36px;
+    color: #9152f8;
+  }
+  
+  /* Text container */
+  .text-container {
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .text-container h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Chat text styling with purple highlight */
+  .text-container h2 {
+    font-size: 36px;
+    margin: 5px 0;
+  }
+  
+  .highlight {
+    color: #9152f8;
+  }
+  
+  /* Description text */
+  .text-container p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  

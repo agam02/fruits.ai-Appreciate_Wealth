@@ -1,0 +1,47 @@
+.faqForm {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faqForm h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.faqForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.faqForm input,
+.faqForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.faqForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.faqForm button:hover {
+    background-color: #0056b3;
+}
+
+.faqForm button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
