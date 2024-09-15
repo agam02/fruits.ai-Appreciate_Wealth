@@ -1,5 +1,5 @@
 import React from 'react';
-import './Profile.css';
+import './profile.css';
 import image from '../../assets/unsplash_mEZ3PoFGs_k.png'
 
 const Profile = () => {
