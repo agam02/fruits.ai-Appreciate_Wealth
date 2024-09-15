@@ -26,7 +26,7 @@ const LoginForm = () => {
     e.preventDefault();
 
     // Check if the input matches dummy credentials
-    if (email === dummyEmail && password === dummyPassword) {
+    if (email && password ) {
       // Redirect to homepage on successful login
       navigate('/Home');
     } else {
