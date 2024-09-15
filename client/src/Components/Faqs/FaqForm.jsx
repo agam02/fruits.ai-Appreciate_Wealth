@@ -14,7 +14,7 @@ const FaqForm = () => {
             // Fetch existing FAQ for editing
             const fetchFAQ = async () => {
                 try {
-                    const response = await fetch(`http://localhost:8000/faqs/${id}`);
+                    const response = await fetch(`https://fruits-ai-appreciate-wealth-backend.onrender.com/faqs/${id}`);
                     if (!response.ok) {
                         throw new Error('Failed to fetch FAQ');
                     }
@@ -39,7 +39,7 @@ const FaqForm = () => {
         e.preventDefault();
         try {
             const method = isEditing ? 'PUT' : 'POST';
-            const url = isEditing ? `http://localhost:8000/faqs/${id}` : 'http://localhost:8000/faqs';
+            const url = isEditing ? `https://fruits-ai-appreciate-wealth-backend.onrender.com/faqs/${id}` : 'https://fruits-ai-appreciate-wealth-backend.onrender.com/faqs';
 
             const response = await fetch(url, {
                 method,
@@ -61,7 +61,7 @@ const FaqForm = () => {
 
     const handleDelete = async () => {
         try {
-            const response = await fetch(`http://localhost:8000/faqs/${id}`, {
+            const response = await fetch(`https://fruits-ai-appreciate-wealth-backend.onrender.com/faqs/${id}`, {
                 method: 'DELETE',
             });
 
