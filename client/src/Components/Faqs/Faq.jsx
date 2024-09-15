@@ -12,7 +12,7 @@ const Faq = () => {
     useEffect(() => {
         const fetchFAQData = async () => {
             try {
-                const response = await fetch('http://localhost:8000/faqs');
+                const response = await fetch('https://fruits-ai-appreciate-wealth-backend.onrender.com/faqs');
                 if (!response.ok) {
                     throw new Error('Failed to fetch FAQ data');
                 }
@@ -30,7 +30,7 @@ const Faq = () => {
 
     const handleDelete = async (id) => {
         try {
-            const response = await fetch(`http://localhost:8000/faqs/${id}`, {
+            const response = await fetch(`https://fruits-ai-appreciate-wealth-backend.onrender.com/faqs/${id}`, {
                 method: 'DELETE',
             });
             if (!response.ok) {
