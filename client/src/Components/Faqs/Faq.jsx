@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';  // Import Link for routing
-import FAQCard from './FAQCard';
+import FAQCard from './FaqCard';
 import styles from './Faq.module.css';
 import PIC from '../../assets/PIC.png';
 
