@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';  // Import Link for routing
+import { Link, useNavigate } from 'react-router-dom';  // Use navigate for programmatic routing
 import FAQCard from './FaqCard';
 import styles from './Faq.module.css';
 import PIC from '../../assets/PIC.png';
@@ -8,6 +8,7 @@ const Faq = () => {
     const [faqData, setFaqData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();  // Initialize the useNavigate hook
 
     useEffect(() => {
         const fetchFAQData = async () => {
@@ -51,7 +52,7 @@ const Faq = () => {
     }
 
     return (
-            <section className={styles.faqSection}>
+        <section className={styles.faqSection}>
             <h2>FAQ Section</h2>
             <Link to="/faq/new" className={styles.addButton}>Add FAQ</Link>
             <div className={styles.faqAccordion}>
@@ -62,7 +63,7 @@ const Faq = () => {
                         question={faq.question}
                         answer={faq.answer}
                         url={faq.image_url}
-                        onEdit={() => window.location.href = `/faq/${faq.id}`}  // Navigate to edit page
+                        onEdit={() => navigate(`/faq/${faq.id}`)}  // Use navigate for routing
                         onDelete={() => handleDelete(faq.id)}
                     />
                 ))}
